@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Web Development for NemoLib
 ======================
 Executes the NemoLib library on a Web to provide easier access to users.
@@ -7,7 +8,7 @@ Requirements
 * A Linux operating environment
 * Installation of Node.js
     On terminal, run `$ sudo apt install nodejs`
-https://github.com/drewandersen/nemolib
+* Copy of nemolib from repository https://github.com/drewandersen/nemolib
 
 Hosting local server
 ---------

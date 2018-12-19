@@ -1,12 +1,22 @@
 {
-  "name": "project_for_networkmotif",
-  "version": "1.0.0",
-  "description": "This is the project for creating a Network Motif webpage.",
+  "name": "web_application_for_networkmotif",
+  "version": "1.0.1",
+  "description": "An application to convert the initially terminal executed only nemolib to a web application to be accessed by any users with ease for querying a Network Motif data by easily uploading the graph and receiving the results back.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node app.js"
   },
-  "author": "Jin Kim",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dori88/school_projects/tree/master/web_development_for_networkmotif"
+  },
+  "keywords": [
+    "Web",
+    "Application",
+    "Network",
+    "Motif",
+  ],
+  "author": "Jin Ju Kim",
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.6.1",

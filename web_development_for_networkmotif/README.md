@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Web Development for NemoLib
 ======================
 Executes the NemoLib library on a Web to provide easier access to users.

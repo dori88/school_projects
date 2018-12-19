@@ -1,27 +1,22 @@
-Sequential NemoProfile
+Web Development for NemoLib
 ======================
-Executes a sequential implementation of NemoProfile.
+Executes the NemoLib library on a Web to provide easier access to users.
 
-Prerequisites
+Requirements
 -------------
-* A Linux operating environment.
-* Ability to compile and run Java 8 or higher
-* Copy of the [`nemolib` library](https://github.com/drewandersen/nemolib) 
-installed in the root directory of the application.
+* A Linux operating environment
+* Installation of Node.js
+    On terminal, run `$ sudo apt install nodejs`
+https://github.com/drewandersen/nemolib
 
-Compile
--------
-Use the included `compile.sh` script to compile the program. You may need 
-to adjust the classpath to match your version of the nemolib library.
-
-Execution
+Hosting local server
 ---------
-Use the included `run.sh` script to execute the program.
+Using Node.js, run `$node app.js` to launch the server.
 
 Usage
 -----
-run.sh path_to_data_file motif_size random_graph_count
+After server has been hosted, 
+Use the browser and add `localhost:3000` to access the application.
 
-Contact
--------
-If you have any questions, contact Drew Andersen at drewda81@gmail.com.
+Press the upload to input a graph, and click on Start to run the library
+and return the results below.

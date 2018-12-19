@@ -1,4 +1,11 @@
-// Using express framework allows Node Js to host a local
+/*
+Written by Jin Ju Kim
+app.js is used to host the backend server using the Node.js
+written in javascript, as well as use few npm packages
+for logic to carry out the functions in application.
+*/
+
+// Using express framework allows Node.js to host a local
 // webserver as well as GET and POST HTTP request 
 // between client and server
 const express = require('express');

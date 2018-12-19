@@ -8,6 +8,9 @@ Requirements
 * Installation of Node.js
     On terminal, run `$ sudo apt install nodejs`
 * Copy of nemolib from repository https://github.com/drewandersen/nemolib
+  written by Dr. Woo Young Kim and her students.
+
+  (This library has already been included for this project)
 
 Hosting local server
 ---------

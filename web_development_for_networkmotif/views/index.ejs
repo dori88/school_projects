@@ -1,0 +1,98 @@
+<% include partials/header %>
+
+  <!-- content is defined within the class -->
+  <body>
+    <!-- container puts a margin between the webpage on each side -->
+    <div class="container">
+      <h2 id="title">Network Motif Setup</h2>
+      <h6>Network motifs are sub-graphs that repeat themselves in a specific network or even among various networks.</h6>
+      <div class="jumbotron">
+        <form ref="uploadForm" id="uploadForm" action="/runNetworkMotif" method="POST" encType="multipart/form-data">
+          <div id="inputGraph">
+            <h3 id="inputTitle"> Input graph </h3>
+            <div class="form-group">
+				<label for="fileInput" class="btn btn-default btn-md">  Upload  </label>
+				<input id="fileInput" type="file" name="fileInput" accept="text/plain" 
+				    style="display: none"/>
+				<input id="fileInputText" disabled="disabled" />
+
+			    <script type="text/javascript">
+			      document.getElementById("fileInput").onchange = function () {
+			      	  var path = this.value;
+			      	  var filename = path.replace(/^.*\\/, "");
+			          document.getElementById("fileInputText").value = filename;
+			      };
+			    </script>
+
+			  <!-- or
+              <label for="fileType" class="btn btn-default btn-md">  Type  </label>
+              <input id="fileType" type="" name="fileInput" style="display: none">
+              <p><strong>Paste Graph:</strong></p>
+              <textarea class="form-control" name="fileInput" rows="10"
+              placeholder="Insert Graph Here"></textarea> -->
+            </div>
+          </div>
+        
+          <div id="algorithOption">
+            <div class="form-group">
+            <label for="subgraphSize">Subgraph size: </label>
+            <input id="subgraphSize" type="number" name="subgraphSize" placeholder="3" min="3" max="15" maxlength="1" size="2" required>
+            <!-- <select id="subgraphSize" name="subGraphSize">
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+            </select> -->
+            </div>
+          </div>
+          <div>
+
+          	<!-- Future Implementation for Enumeration Type -->
+            <!-- <div class="form-group">
+              <input id="fullEnum" type="radio" name="numNetwork" value="fullEnum">
+              <label for="fullEnum">Full enumeration</label>
+              <input id="addProb" type="radio" name="numNetwork" value="addProb">
+              <label for="addProb">Sample probability: </label>
+              <input id="enumProb" type="number" name="subgraphSize" placeholder="0.5">
+              <input id="enumProb" type="number" name="subgraphSize" placeholder="0.5">
+              <input id="enumProb" type="number" name="subgraphSize" placeholder="0.5">
+              <input id="enumProb" type="number" name="subgraphSize" placeholder="0.5">
+              <input id="enumProb" type="number" name="subgraphSize" placeholder="0.5">
+            </div> -->
+
+
+          </div>
+          <div id="randomNetwork">
+            <div class="form-group">
+              <label for="numNetwork">Number of random networks:</label>
+              <input id="numNetwork" type="number" name="numNetwork" placeholder="1000" min="10" max="5000" maxlength="4" size="2" required>
+            </div>
+
+            <!-- Future Implementation for subgraphType -->
+            <!-- <div>
+              <select id="subgraphType" name="subgraphType">
+              <option>Select Subgraph Type:</option>
+              <option>Subgraph Profile</option>
+              <option>Subgraph Count</option>
+              <option>Subgraph Collection</option>
+           	  </select>
+           	  <p> </p>
+            </div> -->
+
+
+          </div>
+          
+          <button class="btn btn-default btn-lg">Start</button>
+        </form>
+        <div id="results">
+			<div>
+				<p> Results :</p>
+				<textarea id="resultsText"><%= results %>
+				</textarea>
+			</div>
+		<div>
+    </div>
+  </div>
+
+<% include partials/footer %>

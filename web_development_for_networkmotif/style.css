@@ -1,0 +1,44 @@
+body{
+  color: rgb(75, 46, 131);
+  font-family: Raleway;
+  margin-top: 2%;
+  /*background: url(https://source.unsplash.com/BW0vK-FA3eg);*/
+  /*background-size: cover;*/
+  /*<img src="https://source.unsplash.com/BW0vK-FA3eg>*/
+}
+#title{
+  font-family: Raleway;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: black;
+}
+#inputTitle{
+  font-family: Raleway;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgb(75, 46, 131);
+  margin-right: 80%;
+}
+.form-control{
+  width: 60%;
+  resize: none;
+}
+.btn-default{
+  background: rgb(75, 46, 131);
+  color: white;
+}
+.form-group{
+  color: rgb(75, 46, 131);
+}
+
+#subgraphSize{
+  width: 50px;
+}
+
+#numNetwork{
+  width: 80px;
+}
+
+#results{
+  padding-top: 10px;
+}

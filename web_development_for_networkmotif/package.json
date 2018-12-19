@@ -1,0 +1,16 @@
+{
+  "name": "project_for_networkmotif",
+  "version": "1.0.0",
+  "description": "This is the project for creating a Network Motif webpage.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jin Kim",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0"
+  }
+}
